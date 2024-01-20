@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<!-- Home Screen -->
+	<string name = "txtPlay" text="SPILLE"/>
+
+	<!-- Episode Screen -->
+	<string name = "txtEpisode" text="EPISODE"/>
+	<string name = "txtEpisodeLoading" text="Indlæser indhold. Vent venligst"/>
+	
+	<!-- Level Screen -->
+	<string name = "txtSelectLevel" text="SELECT LEVEL"/>
+	<string name = "txtLevel" text="NIVEAU"/>
+
+	<!-- Shop -->
+	<string name = "txtShop" text="BUTIK"/>
+	<string name = "txtGetFreeCoins" text="Få 50 gratis mønter."/>
+	<string name = "txtRemoveAds" text="Fjern annoncer"/>
+	<string name = "txtFree" text="LEDIG"/>
+	
+
+	<!-- Settings -->
+	<string name = "txtSettings" text="INDSTILLINGER"/>
+	<string name = "txtON" text="PÅ"/>
+	<string name = "txtOFF" text="AF"/>
+	<string name = "txtMusic" text="musik"/>
+	<string name = "txtSound" text="Lyd"/>
+	<string name = "txtNotifications" text="underretninger"/>
+	<string name = "txtSelectLanguage" text="VÆLG SPROG"/>
+	<string name = "txtPrivacyPolicy" text="FORTROLIGHEDSPOLITIK"/>
+	<string name = "txtSupport" text="SUPPORT"/>
+	<string name = "txtRestoreIAP" text="RESTORE IAP"/>
+
+	<!-- Quit Game -->
+	<string name = "txtQuitConfirm" text="AFSLUT BEKRÆFTELSE?"/>
+	<string name = "txtSureQuit" text="Er du sikker på at du vil afslutte spillet?"/>
+
+	<!-- Level Complete -->
+	<string name = "txtCorrect" text="KORREKT"/>
+	<string name = "txtYouGot" text="DU HAR DET"/>
+	<string name = "txtContinue" text="BLIVE VED"/>
+
+	<!-- Purchase Success -->
+	<string name = "txtSuccess" text="SUCCES!"/>
+	<string name = "txtPurchaseSuccess" text="Congratultions! Køb vellykket."/>
+
+	<!-- Purchase Failure -->
+	<string name = "txtNote" text="BEMÆRK!"/>
+	<string name = "txtPurchaseFail" text="Åh nej! Køb mislykkedes. Prøv igen senere."/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRevealLetter" text="ÅRLIG BREV?"/>
+	<string name = "txtRevealLetterMessage" text="Vil du afsløre et korrekt brev til 50 mønter?"/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRemoveLetter" text="FJERNE EKSTRA BREVER?"/>
+	<string name = "txtRemoveLetterMessage" text="Vil du fjerne ekstra bogstaver for 100 mønter?"/>
+
+	<!-- Get More Coins -->
+	<string name = "txtGetMoreCoins" text="FÅ MERE MØNTER!"/>
+	<string name = "txtGetMoreCoinsMessage" text="Det ser ud som om du ikke har nok mønter. Få flere mønter?"/>
+	<string name = "txtGet50Free" text="FÅ GRATIS"/>
+
+	<!-- Select Language -->
+	<string name = "txtSelectLanguage" text="VÆLG SPROG"/>
+
+	<!-- Help -->
+	<string name = "txtHelp1" text="Tryk let på et bogstav for at indtaste den tomme blok."/>
+	<string name = "txtHelp2" text="Tryk et bogstav tilbage igen for at fjerne det."/>
+	<string name = "txtHelp3" text="Find det fulde ord for at afslutte svaret."/>
+
+	<!-- COMMON -->
+	<string name = "txtYes" text="JA"/>
+	<string name = "txtNo" text="INGEN"/>
+	<string name = "txtOK" text="OK"/>
+	<string name = "txtWatchVideo" text="Se video"/>
+</Resources>

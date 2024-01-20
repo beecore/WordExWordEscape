@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<!-- Home Screen -->
+	<string name = "txtPlay" text="SPELA"/>
+
+	<!-- Episode Screen -->
+	<string name = "txtEpisode" text="EPISOD"/>
+	<string name = "txtEpisodeLoading" text="Laddar innehåll. Vänta"/>
+	
+	<!-- Level Screen -->
+	<string name = "txtSelectLevel" text="VÄLJ NIVÅ"/>
+	<string name = "txtLevel" text="NIVÅ"/>
+
+	<!-- Shop -->
+	<string name = "txtShop" text="AFFÄR"/>
+	<string name = "txtGetFreeCoins" text="Få 50 gratis mynt."/>
+	<string name = "txtRemoveAds" text="Ta bort annonser"/>
+	<string name = "txtFree" text="FRI"/>
+	
+
+	<!-- Settings -->
+	<string name = "txtSettings" text="INSTÄLLNINGAR"/>
+	<string name = "txtON" text="PÅ"/>
+	<string name = "txtOFF" text="AV"/>
+	<string name = "txtMusic" text="musik"/>
+	<string name = "txtSound" text="Ljud"/>
+	<string name = "txtNotifications" text="anmälningar"/>
+	<string name = "txtSelectLanguage" text="VÄLJ SPRÅK"/>
+	<string name = "txtPrivacyPolicy" text="INTEGRITETSPOLICY"/>
+	<string name = "txtSupport" text="STÖD"/>
+	<string name = "txtRestoreIAP" text="RESTORE IAP"/>
+
+	<!-- Quit Game -->
+	<string name = "txtQuitConfirm" text="AVSLUTA BEKRÄFTA?"/>
+	<string name = "txtSureQuit" text="Är du säker på att du vill avsluta spelet?"/>
+
+	<!-- Level Complete -->
+	<string name = "txtCorrect" text="KORREKT"/>
+	<string name = "txtYouGot" text="DU HAR DET"/>
+	<string name = "txtContinue" text="FORTSÄTTA"/>
+
+	<!-- Purchase Success -->
+	<string name = "txtSuccess" text="FRAMGÅNG!"/>
+	<string name = "txtPurchaseSuccess" text="Congratultions! Köp framgångsrikt."/>
+
+	<!-- Purchase Failure -->
+	<string name = "txtNote" text="NOTERA!"/>
+	<string name = "txtPurchaseFail" text="Å nej! Köp misslyckades. Vänligen försök igen senare."/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRevealLetter" text="REVEAL BREV?"/>
+	<string name = "txtRevealLetterMessage" text="Vill du avslöja ett korrekt brev för 50 mynt?"/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRemoveLetter" text="FJÄRR EXTRA BREV?"/>
+	<string name = "txtRemoveLetterMessage" text="Vill du ta bort extra bokstäver för 100 mynt?"/>
+
+	<!-- Get More Coins -->
+	<string name = "txtGetMoreCoins" text="FÅ MER Mynt!"/>
+	<string name = "txtGetMoreCoinsMessage" text="Verkar som om du inte har tillräckligt med mynt. Få fler mynt?"/>
+	<string name = "txtGet50Free" text="FÅ GRATIS"/>
+
+	<!-- Select Language -->
+	<string name = "txtSelectLanguage" text="VÄLJ SPRÅK"/>
+
+	<!-- Help -->
+	<string name = "txtHelp1" text="Tryck på ett brev för att ange i det tomma blocket."/>
+	<string name = "txtHelp2" text="Tryck på ett brev igen för att ta bort det."/>
+	<string name = "txtHelp3" text="Hitta hela ordet för att slutföra svaret."/>
+
+	<!-- COMMON -->
+	<string name = "txtYes" text="JA"/>
+	<string name = "txtNo" text="NEJ"/>
+	<string name = "txtOK" text="OK"/>
+	<string name = "txtWatchVideo" text="Kolla på video"/>
+</Resources>

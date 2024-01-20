@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<!-- Home Screen -->
+	<string name = "txtPlay" text="SPELEN"/>
+
+	<!-- Episode Screen -->
+	<string name = "txtEpisode" text="AFLEVERING"/>
+	<string name = "txtEpisodeLoading" text="Inhoud laden Even geduld aub"/>
+	
+	<!-- Level Screen -->
+	<string name = "txtSelectLevel" text="KIES EEN NIVEAU"/>
+	<string name = "txtLevel" text="NIVEAU"/>
+
+	<!-- Shop -->
+	<string name = "txtShop" text="WINKEL"/>
+	<string name = "txtGetFreeCoins" text="Ontvang 50 gratis munten."/>
+	<string name = "txtRemoveAds" text="Verwijder advertenties"/>
+	<string name = "txtFree" text="GRATIS"/>
+	
+
+	<!-- Settings -->
+	<string name = "txtSettings" text="INSTELLINGEN"/>
+	<string name = "txtON" text="OP"/>
+	<string name = "txtOFF" text="UIT"/>
+	<string name = "txtMusic" text="Muziek"/>
+	<string name = "txtSound" text="Geluid"/>
+	<string name = "txtNotifications" text="meldingen"/>
+	<string name = "txtSelectLanguage" text="SELECTEER TAAL"/>
+	<string name = "txtPrivacyPolicy" text="PRIVACYBELEID"/>
+	<string name = "txtSupport" text="ONDERSTEUNING"/>
+	<string name = "txtRestoreIAP" text="IAP HERSTELLEN"/>
+
+	<!-- Quit Game -->
+	<string name = "txtQuitConfirm" text="STOP CONFIRM?"/>
+	<string name = "txtSureQuit" text="Weet je zeker dat je wilt stoppen met spelen?"/>
+
+
+	<!-- Level Complete -->
+	<string name = "txtCorrect" text="CORRECT"/>
+	<string name = "txtYouGot" text="JIJ HEBT HET"/>
+	<string name = "txtContinue" text="DOORGAAN MET"/>
+
+	<!-- Purchase Success -->
+	<string name = "txtSuccess" text="SUCCES!"/>
+	<string name = "txtPurchaseSuccess" text="Congratultions! Aankoop succesvol."/>
+
+	<!-- Purchase Failure -->
+	<string name = "txtNote" text="NOTITIE!"/>
+	<string name = "txtPurchaseFail" text="Oh nee! Aankoop mislukt. Probeer het later opnieuw."/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRevealLetter" text="Onthulling LETTER?"/>
+	<string name = "txtRevealLetterMessage" text="Wil je een correcte brief voor 50 munten onthullen?"/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRemoveLetter" text="VERWIJDER EXTRA LETTERS?"/>
+	<string name = "txtRemoveLetterMessage" text="Wil je extra letters voor 100 munten verwijderen?"/>
+
+	<!-- Get More Coins -->
+	<string name = "txtGetMoreCoins" text="KRIJG MEER MUNTEN!"/>
+	<string name = "txtGetMoreCoinsMessage" text="Het lijkt erop dat je geen magere munten hebt. Krijg meer munten?"/>
+	<string name = "txtGet50Free" text="ONTVANG GRATIS"/>
+
+	<!-- Select Language -->
+	<string name = "txtSelectLanguage" text="SELECTEER TAAL"/>
+
+	<!-- Help -->
+	<string name = "txtHelp1" text="Tik op een letter om het lege blok in te voeren."/>
+	<string name = "txtHelp2" text="Tik opnieuw op een letter om deze te verwijderen."/>
+	<string name = "txtHelp3" text="Zoek het volledige woord om het antwoord te voltooien."/>
+
+	<!-- COMMON -->
+	<string name = "txtYes" text="JA"/>
+	<string name = "txtNo" text="NEE"/>
+	<string name = "txtOK" text="OK"/>
+	<string name = "txtWatchVideo" text="Bekijk video"/>
+</Resources>

@@ -1,0 +1,577 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aef48021e0f1bf4e856fdf75756af0e, type: 3}
+  m_Name: Episode-5
+  m_EditorClassIdentifier: 
+  episodeNumber: 5
+  episodeName: Episode 5
+  allLevels:
+  - levelNumber: 1
+    allPictures:
+    - {fileID: 21300000, guid: c865b63dd3ad3ec44b452dc7212353d4, type: 3}
+    - {fileID: 21300000, guid: 68b5b6373a31d064ca72e9116a4516f2, type: 3}
+    - {fileID: 21300000, guid: fd6986cdb713c134da0cedfac53a7ce4, type: 3}
+    - {fileID: 21300000, guid: 231e2a3a4bb57a841bf348256f598362, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: JUICE
+    - languageCode: ES
+      answer: JUGO
+    - languageCode: FR
+      answer: JUS
+    - languageCode: PL
+      answer: SOK
+    - languageCode: IT
+      answer: SUCCO
+    - languageCode: DE
+      answer: SAFT
+    - languageCode: NL
+      answer: SAP
+    - languageCode: CS
+      answer: "\u0160\u0164\xC1VA"
+    - languageCode: SV
+      answer: JUICE
+    - languageCode: DA
+      answer: JUICE
+  - levelNumber: 2
+    allPictures:
+    - {fileID: 21300000, guid: e015e20f83ccec24d81d8a9e1cbf71a9, type: 3}
+    - {fileID: 21300000, guid: 05490c96e44ccdc439451024e494913f, type: 3}
+    - {fileID: 21300000, guid: 2b7a2e02849a4e74a945c636edca81af, type: 3}
+    - {fileID: 21300000, guid: 12710b8acb42aa343a19afc127deaf16, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: HERO
+    - languageCode: ES
+      answer: "H\xC9ROE"
+    - languageCode: FR
+      answer: "H\xC9ROS"
+    - languageCode: PL
+      answer: BOHATER
+    - languageCode: IT
+      answer: EROE
+    - languageCode: DE
+      answer: HELD
+    - languageCode: NL
+      answer: HELD
+    - languageCode: CS
+      answer: HRDINA
+    - languageCode: SV
+      answer: "HJ\xC4LTE"
+    - languageCode: DA
+      answer: HERO
+  - levelNumber: 3
+    allPictures:
+    - {fileID: 21300000, guid: ddf9aacd8b6c1174b9cc1acb73bc8ec3, type: 3}
+    - {fileID: 21300000, guid: 293899fd014db834eafad8d07cf63d9e, type: 3}
+    - {fileID: 21300000, guid: 98e5a14b76f3ee74086aaafa8fbbf6a1, type: 3}
+    - {fileID: 21300000, guid: 7a7f687f8f3ae584ba216117d34c306d, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: FRUIT
+    - languageCode: ES
+      answer: FRUTA
+    - languageCode: FR
+      answer: FRUIT
+    - languageCode: PL
+      answer: OWOC
+    - languageCode: IT
+      answer: FRUTTA
+    - languageCode: DE
+      answer: OBST
+    - languageCode: NL
+      answer: FRUIT
+    - languageCode: CS
+      answer: OVOCE
+    - languageCode: SV
+      answer: FRUKT
+    - languageCode: DA
+      answer: FRUIT
+  - levelNumber: 4
+    allPictures:
+    - {fileID: 21300000, guid: c4051b9589199ab4e8dc571ee67422cc, type: 3}
+    - {fileID: 21300000, guid: f9f4a47132d86ed43a153fec9158a530, type: 3}
+    - {fileID: 21300000, guid: 578ee25f566ba164e98fb8b169aeb4e9, type: 3}
+    - {fileID: 21300000, guid: b6157008aedf77a4e96330f8fbd96aea, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: GIFT
+    - languageCode: ES
+      answer: REGALO
+    - languageCode: FR
+      answer: CADEAU
+    - languageCode: PL
+      answer: PREZENT
+    - languageCode: IT
+      answer: REGALO
+    - languageCode: DE
+      answer: GESCHENK
+    - languageCode: NL
+      answer: GIFT
+    - languageCode: CS
+      answer: DAR
+    - languageCode: SV
+      answer: "G\xC5VA"
+    - languageCode: DA
+      answer: GIFT
+  - levelNumber: 5
+    allPictures:
+    - {fileID: 21300000, guid: 31ae07246b69b0f439acf553ed1b4dc5, type: 3}
+    - {fileID: 21300000, guid: 6ab6260641fa5ca4ca3d33868ae0d708, type: 3}
+    - {fileID: 21300000, guid: 33a4cf772e531d04abd4b354b891f92a, type: 3}
+    - {fileID: 21300000, guid: a14b81d702ca1df4ca340106d285b514, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: CAR
+    - languageCode: ES
+      answer: COCHE
+    - languageCode: FR
+      answer: VOITURE
+    - languageCode: PL
+      answer: "SAMOCH\xD3D"
+    - languageCode: IT
+      answer: AUTO
+    - languageCode: DE
+      answer: AUTO
+    - languageCode: NL
+      answer: AUTO
+    - languageCode: CS
+      answer: AUTO
+    - languageCode: SV
+      answer: BIL
+    - languageCode: DA
+      answer: CAR
+  - levelNumber: 6
+    allPictures:
+    - {fileID: 21300000, guid: 6818af0c32b80c040b238463438415b0, type: 3}
+    - {fileID: 21300000, guid: 0bc10153a64f28a43ad09551aa240243, type: 3}
+    - {fileID: 21300000, guid: a6a8ce9aaf6ddb84c873ef053e0313f0, type: 3}
+    - {fileID: 21300000, guid: 9497d250e34e51f4989b216c4131dfde, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: PUSH
+    - languageCode: ES
+      answer: EMPUJAR
+    - languageCode: FR
+      answer: POUSSER
+    - languageCode: PL
+      answer: "PCHA\u0106"
+    - languageCode: IT
+      answer: SPINGERE
+    - languageCode: DE
+      answer: "DR\xDCCKEN"
+    - languageCode: NL
+      answer: DUWEN
+    - languageCode: CS
+      answer: "TLA\u010CIT"
+    - languageCode: SV
+      answer: TRYCK
+    - languageCode: DA
+      answer: PUSH
+  - levelNumber: 7
+    allPictures:
+    - {fileID: 21300000, guid: 1743287b4b440f243a410962ce748661, type: 3}
+    - {fileID: 21300000, guid: 4db6edb1078d47f4e85d41e5f73caf06, type: 3}
+    - {fileID: 21300000, guid: de336a2c66821834e97428bfbd46f7de, type: 3}
+    - {fileID: 21300000, guid: fbe1c6826cc0ab249839b79132066b79, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: OLD
+    - languageCode: ES
+      answer: ANTIGUO
+    - languageCode: FR
+      answer: VIEUX
+    - languageCode: PL
+      answer: STARY
+    - languageCode: IT
+      answer: VECCHIO
+    - languageCode: DE
+      answer: ALT
+    - languageCode: NL
+      answer: OUD
+    - languageCode: CS
+      answer: "STAR\xDD"
+    - languageCode: SV
+      answer: GAMMAL
+    - languageCode: DA
+      answer: OLD
+  - levelNumber: 8
+    allPictures:
+    - {fileID: 21300000, guid: 0d329ad7fdfd8cb46ba0143fd7537f7b, type: 3}
+    - {fileID: 21300000, guid: 137a1e70bca6a214e842fa09119fd25b, type: 3}
+    - {fileID: 21300000, guid: daf5c0362fab9b14f99013389d2647c2, type: 3}
+    - {fileID: 21300000, guid: 905b03be138862346a58e10ec874bce7, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: WET
+    - languageCode: ES
+      answer: MOJADO
+    - languageCode: FR
+      answer: HUMIDE
+    - languageCode: PL
+      answer: MOKRO
+    - languageCode: IT
+      answer: BAGNATO
+    - languageCode: DE
+      answer: NASS
+    - languageCode: NL
+      answer: NAT
+    - languageCode: CS
+      answer: WET
+    - languageCode: SV
+      answer: "V\xC5T"
+    - languageCode: DA
+      answer: WET
+  - levelNumber: 9
+    allPictures:
+    - {fileID: 21300000, guid: c8995cf269cd6b743aa3acfc1a444c47, type: 3}
+    - {fileID: 21300000, guid: 065f493c12156af4a9a02ec3702fc436, type: 3}
+    - {fileID: 21300000, guid: 4255b5b59d2f6034ca44005b99fe25b2, type: 3}
+    - {fileID: 21300000, guid: cfd5c8dcf68c6ce4789e4f68a2226d47, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: TEETH
+    - languageCode: ES
+      answer: DIENTES
+    - languageCode: FR
+      answer: LESDENTS
+    - languageCode: PL
+      answer: "Z\u0118BY"
+    - languageCode: IT
+      answer: DENTI
+    - languageCode: DE
+      answer: "Z\xC4HNE"
+    - languageCode: NL
+      answer: TANDEN
+    - languageCode: CS
+      answer: ZUBY
+    - languageCode: SV
+      answer: "T\xC4NDER"
+    - languageCode: DA
+      answer: TEETH
+  - levelNumber: 10
+    allPictures:
+    - {fileID: 21300000, guid: 024a2dc2f6acec748967538ece8cf78f, type: 3}
+    - {fileID: 21300000, guid: ed02975d64006ba4b9b39acc84f3f2a7, type: 3}
+    - {fileID: 21300000, guid: 45fbf8e91dd75b34e95cc5e64ef428d5, type: 3}
+    - {fileID: 21300000, guid: b89a54cfd6424bb4c8e818c4385cd63d, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: GLASS
+    - languageCode: ES
+      answer: VASO
+    - languageCode: FR
+      answer: VERRE
+    - languageCode: PL
+      answer: "SZK\u0141O"
+    - languageCode: IT
+      answer: BICCHIERE
+    - languageCode: DE
+      answer: GLAS
+    - languageCode: NL
+      answer: GLAS
+    - languageCode: CS
+      answer: SKLENKA
+    - languageCode: SV
+      answer: GLAS
+    - languageCode: DA
+      answer: GLASS
+  - levelNumber: 11
+    allPictures:
+    - {fileID: 21300000, guid: 2fe640e492f8d3b4a9784d3397305221, type: 3}
+    - {fileID: 21300000, guid: e0716d647edbf07449d56471aebd3f29, type: 3}
+    - {fileID: 21300000, guid: 3b60d51cc2bc68a4ebbfaea90646ea6f, type: 3}
+    - {fileID: 21300000, guid: cdbc52b8f7ceeb241a5c833e59c3682a, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: LEAF
+    - languageCode: ES
+      answer: HOJA
+    - languageCode: FR
+      answer: FEUILLE
+    - languageCode: PL
+      answer: "LI\u015A\u0106"
+    - languageCode: IT
+      answer: FOGLIA
+    - languageCode: DE
+      answer: BLATT
+    - languageCode: NL
+      answer: BLAD
+    - languageCode: CS
+      answer: LIST
+    - languageCode: SV
+      answer: BLAD
+    - languageCode: DA
+      answer: LEAF
+  - levelNumber: 12
+    allPictures:
+    - {fileID: 21300000, guid: 9cda52fdf1b9e904f818aa34f4f3d7b4, type: 3}
+    - {fileID: 21300000, guid: cd13bcb57d1214946a5c61a0aaf88cf9, type: 3}
+    - {fileID: 21300000, guid: cfe729cab61839b46a7733a9cf10b61e, type: 3}
+    - {fileID: 21300000, guid: 5ab812e642cccdf46acdc5276eb3aa05, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: MOON
+    - languageCode: ES
+      answer: LUNA
+    - languageCode: FR
+      answer: LUNE
+    - languageCode: PL
+      answer: "KSI\u0118\u017BYC"
+    - languageCode: IT
+      answer: LUNA
+    - languageCode: DE
+      answer: MOND
+    - languageCode: NL
+      answer: MAAN
+    - languageCode: CS
+      answer: "M\u011AS\xCDC"
+    - languageCode: SV
+      answer: "M\xC5NE"
+    - languageCode: DA
+      answer: MOON
+  - levelNumber: 13
+    allPictures:
+    - {fileID: 21300000, guid: 9cb6b1ec586c9ce48a6e1e1667b9cf8c, type: 3}
+    - {fileID: 21300000, guid: 7525d850c8633e74abba827404ed2425, type: 3}
+    - {fileID: 21300000, guid: d12a45dfdb2568e4ab213fa4293ef4e4, type: 3}
+    - {fileID: 21300000, guid: 24db0a833e3005c448cb4c6db3986c26, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: POLICE
+    - languageCode: ES
+      answer: "POLIC\xCDA"
+    - languageCode: FR
+      answer: POLICE
+    - languageCode: PL
+      answer: POLICJA
+    - languageCode: IT
+      answer: POLIZIA
+    - languageCode: DE
+      answer: POLIZEI
+    - languageCode: NL
+      answer: POLITIE
+    - languageCode: CS
+      answer: POLICIE
+    - languageCode: SV
+      answer: POLIS
+    - languageCode: DA
+      answer: POLICE
+  - levelNumber: 14
+    allPictures:
+    - {fileID: 21300000, guid: c80e0b344e52d504589208c09647f5dd, type: 3}
+    - {fileID: 21300000, guid: dd18be85436b0dd42bfadf6aefced81e, type: 3}
+    - {fileID: 21300000, guid: 91daf984f7652cb47b785ad2b620b334, type: 3}
+    - {fileID: 21300000, guid: 3de036f99a2177d42bab2fcd4835b8e9, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: SIGNAL
+    - languageCode: ES
+      answer: "SE\xD1AL"
+    - languageCode: FR
+      answer: SIGNAL
+    - languageCode: PL
+      answer: "SYGNA\u0141"
+    - languageCode: IT
+      answer: SEGNALE
+    - languageCode: DE
+      answer: SIGNAL
+    - languageCode: NL
+      answer: SIGNAAL
+    - languageCode: CS
+      answer: "SIGN\xC1L"
+    - languageCode: SV
+      answer: SIGNAL
+    - languageCode: DA
+      answer: SIGNAL
+  - levelNumber: 15
+    allPictures:
+    - {fileID: 21300000, guid: 3ab8c7fbbe8409640a8d3b066b0cce82, type: 3}
+    - {fileID: 21300000, guid: bea84e50a5427154fb6cb4299f57d88e, type: 3}
+    - {fileID: 21300000, guid: a53b1b84c7b2f564da600eeaa3881432, type: 3}
+    - {fileID: 21300000, guid: b8f927e5a6badcb4da627e8730031051, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: LUCK
+    - languageCode: ES
+      answer: SUERTE
+    - languageCode: FR
+      answer: LACHANCE
+    - languageCode: PL
+      answer: "SZCZ\u0118\u015ACIE"
+    - languageCode: IT
+      answer: FORTUNA
+    - languageCode: DE
+      answer: "GL\xDCCK"
+    - languageCode: NL
+      answer: GELUK
+    - languageCode: CS
+      answer: "\u0160T\u011AST\xCD"
+    - languageCode: SV
+      answer: TUR
+    - languageCode: DA
+      answer: LUCK
+  - levelNumber: 16
+    allPictures:
+    - {fileID: 21300000, guid: fab00640da18d214a8ab7c52be49faae, type: 3}
+    - {fileID: 21300000, guid: 38ff14fb63b8c3744a8bcd688d342037, type: 3}
+    - {fileID: 21300000, guid: 5abdee3b089c577498d6d671a9eafa28, type: 3}
+    - {fileID: 21300000, guid: 370781dc1714625469bbc8f44a436070, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: TENT
+    - languageCode: ES
+      answer: TIENDA
+    - languageCode: FR
+      answer: TENTE
+    - languageCode: PL
+      answer: NAMIOT
+    - languageCode: IT
+      answer: TENDA
+    - languageCode: DE
+      answer: ZELT
+    - languageCode: NL
+      answer: TENT
+    - languageCode: CS
+      answer: STAN
+    - languageCode: SV
+      answer: "T\xC4LT"
+    - languageCode: DA
+      answer: TENT
+  - levelNumber: 17
+    allPictures:
+    - {fileID: 21300000, guid: 1587f0aabe2578149acec718d0bada83, type: 3}
+    - {fileID: 21300000, guid: f618f470507159945b7069c08ad36713, type: 3}
+    - {fileID: 21300000, guid: 71bb24f8f29b07942b93f9aa32169366, type: 3}
+    - {fileID: 21300000, guid: fc06bde3015f6dc4e86069e056d0e8d8, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: STRONG
+    - languageCode: ES
+      answer: FUERTE
+    - languageCode: FR
+      answer: FORT
+    - languageCode: PL
+      answer: SILNY
+    - languageCode: IT
+      answer: FORTE
+    - languageCode: DE
+      answer: STARK
+    - languageCode: NL
+      answer: STERK
+    - languageCode: CS
+      answer: "SILN\xDD"
+    - languageCode: SV
+      answer: STARK
+    - languageCode: DA
+      answer: STRONG
+  - levelNumber: 18
+    allPictures:
+    - {fileID: 21300000, guid: ba2276090e0d6ee4eb7179365b15d123, type: 3}
+    - {fileID: 21300000, guid: aea6b0f16989dd94498f8e7267d1d74c, type: 3}
+    - {fileID: 21300000, guid: d96d3f49f34780249aba94362f58073d, type: 3}
+    - {fileID: 21300000, guid: 364d39bc416404e46ba11e2b50d60204, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: SCREEN
+    - languageCode: ES
+      answer: PANTALLA
+    - languageCode: FR
+      answer: "\xC9CRAN"
+    - languageCode: PL
+      answer: EKRAN
+    - languageCode: IT
+      answer: SCHERMO
+    - languageCode: DE
+      answer: BILDSCHIRM
+    - languageCode: NL
+      answer: SCHERM
+    - languageCode: CS
+      answer: OBRAZOVKA
+    - languageCode: SV
+      answer: "SK\xC4RM"
+    - languageCode: DA
+      answer: SCREEN
+  - levelNumber: 19
+    allPictures:
+    - {fileID: 21300000, guid: 6cd2803467b7f144fa6ee97d6e64b043, type: 3}
+    - {fileID: 21300000, guid: 47bd40f061a1a44478532fb533c8fb75, type: 3}
+    - {fileID: 21300000, guid: 660cc899c350d504cb6be2ea5923a536, type: 3}
+    - {fileID: 21300000, guid: ed95bf72fbb6b27479d23e80c27d32e2, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: MOUSE
+    - languageCode: ES
+      answer: "RAT\xD3N"
+    - languageCode: FR
+      answer: SOURIS
+    - languageCode: PL
+      answer: MYSZ
+    - languageCode: IT
+      answer: TOPO
+    - languageCode: DE
+      answer: MAUS
+    - languageCode: NL
+      answer: MUIS
+    - languageCode: CS
+      answer: "MY\u0160"
+    - languageCode: SV
+      answer: MUS
+    - languageCode: DA
+      answer: MOUSE
+  - levelNumber: 20
+    allPictures:
+    - {fileID: 21300000, guid: 8bf2d13df82d66b4fa8c3fd88b8d0343, type: 3}
+    - {fileID: 21300000, guid: c97a2296adf05b943a1d210135ebebbc, type: 3}
+    - {fileID: 21300000, guid: b80fc74c7c93b944c9c189eb7e6f8d2d, type: 3}
+    - {fileID: 21300000, guid: 06bdd8f5cce9978448411b2519e4bd47, type: 3}
+    answer: 
+    localizedAnswers:
+    - languageCode: EN
+      answer: ANGRY
+    - languageCode: ES
+      answer: ENOJADO
+    - languageCode: FR
+      answer: "F\xC2CH\xC9"
+    - languageCode: PL
+      answer: "Z\u0141Y"
+    - languageCode: IT
+      answer: ARRABBIATO
+    - languageCode: DE
+      answer: "W\xDCTEND"
+    - languageCode: NL
+      answer: BOOS
+    - languageCode: CS
+      answer: "ROZZLOBEN\xDD"
+    - languageCode: SV
+      answer: ARG
+    - languageCode: DA
+      answer: ANGRY

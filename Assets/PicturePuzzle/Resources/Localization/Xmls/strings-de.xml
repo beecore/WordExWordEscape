@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<!-- Home Screen -->
+	<string name = "txtPlay" text="ABSPIELEN"/>
+
+	<!-- Episode Screen -->
+	<string name = "txtEpisode" text="FOLGE"/>
+	<string name = "txtEpisodeLoading" text="Inhalt wird geladen. Warten Sie mal"/>
+	
+	<!-- Level Screen -->
+	<string name = "txtSelectLevel" text="STUFE AUSWÄHLEN"/>
+	<string name = "txtLevel" text="NIVEAU"/>
+
+	<!-- Shop -->
+	<string name = "txtShop" text="GESCHÄFT"/>
+	<string name = "txtGetFreeCoins" text="Bekomme 50 Gratismünzen."/>
+	<string name = "txtRemoveAds" text="Anzeigen entfernen"/>
+	<string name = "txtFree" text="KOSTENLOS"/>
+	
+
+	<!-- Settings -->
+	<string name = "txtSettings" text="DIE EINSTELLUNGEN"/>
+	<string name = "txtON" text="AUF"/>
+	<string name = "txtOFF" text="AUS"/>
+	<string name = "txtMusic" text="Musik"/>
+	<string name = "txtSound" text="Klingen"/>
+	<string name = "txtNotifications" text="Benachrichtigungen"/>
+	<string name = "txtSelectLanguage" text="SPRACHE AUSWÄHLEN"/>
+	<string name = "txtPrivacyPolicy" text="DATENSCHUTZ-BESTIMMUNGEN"/>
+	<string name = "txtSupport" text="UNTERSTÜTZUNG"/>
+	<string name = "txtRestoreIAP" text="RESTORE IAP"/>
+
+	<!-- Quit Game -->
+	<string name = "txtQuitConfirm" text="BEENDEN BESTÄTIGEN?"/>
+	<string name = "txtSureQuit" text="Möchten Sie das Spiel wirklich beenden?"/>
+
+
+	<!-- Level Complete -->
+	<string name = "txtCorrect" text="RICHTIG"/>
+	<string name = "txtYouGot" text="DU HAST ES"/>
+	<string name = "txtContinue" text="FORTSETZEN"/>
+
+	<!-- Purchase Success -->
+	<string name = "txtSuccess" text="ERFOLG!"/>
+	<string name = "txtPurchaseSuccess" text="Glückwunsch! Kauf erfolgreich."/>
+
+	<!-- Purchase Failure -->
+	<string name = "txtNote" text="HINWEIS!"/>
+	<string name = "txtPurchaseFail" text="Ach nein! Kauf gescheitert. Bitte versuchen Sie es später erneut."/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRevealLetter" text="REVEAL-BRIEF"/>
+	<string name = "txtRevealLetterMessage" text="Sie möchten einen korrekten Brief für 50 Münzen offenbaren?"/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRemoveLetter" text="EXTRA-BUCHSTABEN ENTFERNEN?"/>
+	<string name = "txtRemoveLetterMessage" text="Sie möchten zusätzliche Buchstaben für 100 Münzen entfernen?"/>
+
+	<!-- Get More Coins -->
+	<string name = "txtGetMoreCoins" text="BEKOMME MEHR MÜNZEN!"/>
+	<string name = "txtGetMoreCoinsMessage" text="Scheint, als hättest du nicht genug Münzen. Bekomme mehr Münzen?"/>
+	<string name = "txtGet50Free" text="KOSTENLOS"/>
+
+	<!-- Select Language -->
+	<string name = "txtSelectLanguage" text="SPRACHE AUSWÄHLEN"/>
+
+	<!-- Help -->
+	<string name = "txtHelp1" text="Tippen Sie auf einen Buchstaben, um den leeren Block einzugeben."/>
+	<string name = "txtHelp2" text="Tippen Sie erneut auf einen Buchstaben, um ihn zu entfernen."/>
+	<string name = "txtHelp3" text="Finden Sie das vollständige Wort, um die Antwort zu vervollständigen."/>
+
+	<!-- COMMON -->
+	<string name = "txtYes" text="JA"/>
+	<string name = "txtNo" text="NEIN"/>
+	<string name = "txtOK" text="OK"/>
+	<string name = "txtWatchVideo" text="Schau Video"/>
+</Resources>

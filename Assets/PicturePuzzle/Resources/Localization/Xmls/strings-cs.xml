@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<!-- Home Screen -->
+	<string name = "txtPlay" text="HRÁT SI"/>
+
+	<!-- Episode Screen -->
+	<string name = "txtEpisode" text="EPIZODA"/>
+	<string name = "txtEpisodeLoading" text="Načítání obsahu. Prosím, čekejte"/>
+	
+	<!-- Level Screen -->
+	<string name = "txtSelectLevel" text="SELECT LEVEL"/>
+	<string name = "txtLevel" text="ÚROVEŇ"/>
+
+	<!-- Shop -->
+	<string name = "txtShop" text="PRODEJNA"/>
+	<string name = "txtGetFreeCoins" text="Získejte 50 volných mincí."/>
+	<string name = "txtRemoveAds" text="odebrat reklamy"/>
+	<string name = "txtFree" text="VOLNÝ, UVOLNIT"/>
+	
+
+	<!-- Settings -->
+	<string name = "txtSettings" text="NASTAVENÍ"/>
+	<string name = "txtON" text="NA"/>
+	<string name = "txtOFF" text="VYPNUTO"/>
+	<string name = "txtMusic" text="Hudba"/>
+	<string name = "txtSound" text="Zvuk"/>
+	<string name = "txtNotifications" text="Oznámení"/>
+	<string name = "txtSelectLanguage" text="ZVOLTE JAZYK"/>
+	<string name = "txtPrivacyPolicy" text="ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ"/>
+	<string name = "txtSupport" text="PODPĚRA, PODPORA"/>
+	<string name = "txtRestoreIAP" text="Obnovit IAP"/>
+
+	<!-- Quit Game -->
+	<string name = "txtQuitConfirm" text="QUIT POTVRZIT?"/>
+	<string name = "txtSureQuit" text="Opravdu chcete ukončit hru?"/>
+
+
+	<!-- Level Complete -->
+	<string name = "txtCorrect" text="OPRAVIT"/>
+	<string name = "txtYouGot" text="MÁŠ TO"/>
+	<string name = "txtContinue" text="POKRAČOVAT"/>
+
+	<!-- Purchase Success -->
+	<string name = "txtSuccess" text="ÚSPĚCH!"/>
+	<string name = "txtPurchaseSuccess" text="Gratulujeme! Nákup úspěšný."/>
+
+	<!-- Purchase Failure -->
+	<string name = "txtNote" text="POZNÁMKA!"/>
+	<string name = "txtPurchaseFail" text="Ach ne! Nákup selhal. Prosím zkuste to znovu později."/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRevealLetter" text="ZVEŘEJNĚTE LIST?"/>
+	<string name = "txtRevealLetterMessage" text="Chcete odhalit správný dopis pro 50 mincí?"/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRemoveLetter" text="ODSTRANĚTE DALŠÍ LISTY?"/>
+	<string name = "txtRemoveLetterMessage" text="Chcete odstranit další písmena pro 100 mincí?"/>
+
+	<!-- Get More Coins -->
+	<string name = "txtGetMoreCoins" text="Získejte více mincí!"/>
+	<string name = "txtGetMoreCoinsMessage" text="Zdá se, že nemáte mince. Získejte více mincí?"/>
+	<string name = "txtGet50Free" text="ZÍSKAT ZDARMA"/>
+
+	<!-- Select Language -->
+	<string name = "txtSelectLanguage" text="ZVOLTE JAZYK"/>
+
+	<!-- Help -->
+	<string name = "txtHelp1" text="Klepnutím na písmeno zadejte prázdný blok."/>
+	<string name = "txtHelp2" text="Chcete-li jej odstranit, klepněte znovu na písmeno."/>
+	<string name = "txtHelp3" text="Najděte úplné slovo pro dokončení odpovědi."/>
+
+	<!-- COMMON -->
+	<string name = "txtYes" text="ANO"/>
+	<string name = "txtNo" text="NE"/>
+	<string name = "txtOK" text="OK"/>
+	<string name = "txtWatchVideo" text="Sledovat video"/>
+</Resources>

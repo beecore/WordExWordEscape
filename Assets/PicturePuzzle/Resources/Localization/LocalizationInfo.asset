@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e362203ac1c86d74abfe7915c1feb9f9, type: 3}
+  m_Name: LocalizationInfo
+  m_EditorClassIdentifier: 
+  LanguageList:
+  - LanguageName: English
+    LangaugeCode: EN
+    imgFlag: {fileID: 21300000, guid: 9eadbb82b04795a4d9400623ed23949a, type: 3}
+    isAvailable: 1
+  - LanguageName: "Spanish(Espa\xF1ol)"
+    LangaugeCode: ES
+    imgFlag: {fileID: 21300000, guid: 94f7b05e765400442b8b754d76e9baac, type: 3}
+    isAvailable: 1
+  - LanguageName: "French(Fran\xE7ais)"
+    LangaugeCode: FR
+    imgFlag: {fileID: 21300000, guid: d24127178385abb4fa1eddc35c8e87bf, type: 3}
+    isAvailable: 1
+  - LanguageName: Polish(Polskie)
+    LangaugeCode: PL
+    imgFlag: {fileID: 21300000, guid: c53f363c2b2c9d84ebe1f0814d56af1a, type: 3}
+    isAvailable: 1
+  - LanguageName: Italian(Italiano)
+    LangaugeCode: IT
+    imgFlag: {fileID: 21300000, guid: b4390e2cbdef80e42a3b49fa51a871e0, type: 3}
+    isAvailable: 1
+  - LanguageName: German(Deutsche)
+    LangaugeCode: DE
+    imgFlag: {fileID: 21300000, guid: 3b4e2ce93ed3cb54c8d04f57cb285470, type: 3}
+    isAvailable: 1
+  - LanguageName: Dutch(Nederlands)
+    LangaugeCode: NL
+    imgFlag: {fileID: 21300000, guid: 2551a39f72f685a44915bb9a7187a63d, type: 3}
+    isAvailable: 1
+  - LanguageName: "Czech(\u010De\u0161tina)"
+    LangaugeCode: CS
+    imgFlag: {fileID: 21300000, guid: 6c890a36124415640b98f3e0049f8228, type: 3}
+    isAvailable: 1
+  - LanguageName: Swedish(svenska)
+    LangaugeCode: SV
+    imgFlag: {fileID: 21300000, guid: 51e8d087024474d48844a05e86b794da, type: 3}
+    isAvailable: 1
+  - LanguageName: Danish(dansk)
+    LangaugeCode: DA
+    imgFlag: {fileID: 21300000, guid: 63381eac854c273448ddb63d9f3bc3cb, type: 3}
+    isAvailable: 1

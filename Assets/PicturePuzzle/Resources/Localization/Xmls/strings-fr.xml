@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<!-- Home Screen -->
+	<string name = "txtPlay" text="JOUER"/>
+
+	<!-- Episode Screen -->
+	<string name = "txtEpisode" text="ÉPISODE"/>
+	<string name = "txtEpisodeLoading" text="Chargement du contenu. S'il vous plaît, attendez"/>
+	
+	<!-- Level Screen -->
+	<string name = "txtSelectLevel" text="CHOISIR LE NIVEAU"/>
+	<string name = "txtLevel" text="NIVEAU"/>
+
+	<!-- Shop -->
+	<string name = "txtShop" text="BOUTIQUE"/>
+	<string name = "txtGetFreeCoins" text="Obtenez 50 pièces gratuites."/>
+	<string name = "txtRemoveAds" text="Supprimez la pub"/>
+	<string name = "txtFree" text="LIBRE"/>
+	
+
+	<!-- Settings -->
+	<string name = "txtSettings" text="RÉGLAGES"/>
+	<string name = "txtON" text="SUR"/>
+	<string name = "txtOFF" text="DE"/>
+	<string name = "txtMusic" text="La musique"/>
+	<string name = "txtSound" text="Du son"/>
+	<string name = "txtNotifications" text="Les notifications"/>
+	<string name = "txtSelectLanguage" text="CHOISIR LA LANGUE"/>
+	<string name = "txtPrivacyPolicy" text="POLITIQUE DE CONFIDENTIALITÉ"/>
+	<string name = "txtSupport" text="SOUTIEN"/>
+	<string name = "txtRestoreIAP" text="RESTORE IAP"/>
+
+	<!-- Quit Game -->
+	<string name = "txtQuitConfirm" text="QUITTER CONFIRMER?"/>
+	<string name = "txtSureQuit" text="Êtes-vous sûr de vouloir quitter le jeu?"/>
+
+
+	<!-- Level Complete -->
+	<string name = "txtCorrect" text="CORRECT"/>
+	<string name = "txtYouGot" text="TU L'AS EU"/>
+	<string name = "txtContinue" text="CONTINUER"/>
+
+	<!-- Purchase Success -->
+	<string name = "txtSuccess" text="SUCCÈS!"/>
+	<string name = "txtPurchaseSuccess" text="Félicitations! Achat réussi."/>
+
+	<!-- Purchase Failure -->
+	<string name = "txtNote" text="REMARQUE!"/>
+	<string name = "txtPurchaseFail" text="Oh non! Achat raté. Veuillez réessayer plus tard."/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRevealLetter" text="LETTRE RÉVÈLE?"/>
+	<string name = "txtRevealLetterMessage" text="Vous voulez révéler une lettre correcte pour 50 pièces?"/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRemoveLetter" text="ENLEVEZ DES LETTRES SUPPLEMENTAIRES?"/>
+	<string name = "txtRemoveLetterMessage" text="Vous souhaitez supprimer des lettres supplémentaires pour 100 pièces?"/>
+
+	<!-- Get More Coins -->
+	<string name = "txtGetMoreCoins" text="OBTENEZ PLUS DE PIECES!"/>
+	<string name = "txtGetMoreCoinsMessage" text="On dirait que vous n'avez pas assez de pièces. Obtenez plus de pièces?"/>
+	<string name = "txtGet50Free" text="OBTENIR GRATUITEMENT"/>
+
+	<!-- Select Language -->
+	<string name = "txtSelectLanguage" text="CHOISIR LA LANGUE"/>
+
+	<!-- Help -->
+	<string name = "txtHelp1" text="Appuyez sur une lettre pour entrer dans le bloc vide."/>
+	<string name = "txtHelp2" text="Appuyez à nouveau sur une lettre pour la supprimer."/>
+	<string name = "txtHelp3" text="Trouvez le mot complet pour compléter la réponse."/>
+
+	<!-- COMMON -->
+	<string name = "txtYes" text="OUI"/>
+	<string name = "txtNo" text="NON"/>
+	<string name = "txtOK" text="D'accord"/>
+	<string name = "txtWatchVideo" text="Regarder la vidéo"/>
+</Resources>

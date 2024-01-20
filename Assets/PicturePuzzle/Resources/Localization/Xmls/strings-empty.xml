@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<!-- Home Screen -->
+	<string name = "txtPlay" text=""/>
+
+	<!-- Episode Screen -->
+	<string name = "txtEpisode" text=""/>
+	<string name = "txtEpisodeLoading" text=""/>
+	
+	<!-- Level Screen -->
+	<string name = "txtSelectLevel" text=""/>
+	<string name = "txtLevel" text=""/>
+
+	<!-- Shop -->
+	<string name = "txtShop" text=""/>
+	<string name = "txtGetFreeCoins" text=""/>
+	<string name = "txtRemoveAds" text=""/>
+	<string name = "txtFree" text=""/>
+	
+
+	<!-- Settings -->
+	<string name = "txtSettings" text=""/>
+	<string name = "txtON" text=""/>
+	<string name = "txtOFF" text=""/>
+	<string name = "txtMusic" text=""/>
+	<string name = "txtSound" text=""/>
+	<string name = "txtNotifications" text=""/>
+	<string name = "txtSelectLanguage" text=""/>
+	<string name = "txtPrivacyPolicy" text=""/>
+	<string name = "txtSupport" text=""/>
+	<string name = "txtRestoreIAP" text=""/>
+
+	<!-- Quit Game -->
+	<string name = "txtQuitConfirm" text=""/>
+	<string name = "txtSureQuit" text=""/>
+
+
+	<!-- Level Complete -->
+	<string name = "txtCorrect" text=""/>
+	<string name = "txtYouGot" text=""/>
+	<string name = "txtContinue" text=""/>
+
+	<!-- Purchase Success -->
+	<string name = "txtSuccess" text=""/>
+	<string name = "txtPurchaseSuccess" text=""/>
+
+	<!-- Purchase Failure -->
+	<string name = "txtNote" text=""/>
+	<string name = "txtPurchaseFail" text=""/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRevealLetter" text=""/>
+	<string name = "txtRevealLetterMessage" text=""/>
+
+	<!-- Reveal Character -->
+	<string name = "txtRemoveLetter" text=""/>
+	<string name = "txtRemoveLetterMessage" text=""/>
+
+	<!-- Get More Coins -->
+	<string name = "txtGetMoreCoins" text=""/>
+	<string name = "txtGetMoreCoinsMessage" text=""/>
+	<string name = "txtGet50Free" text=""/>
+
+	<!-- Select Language -->
+	<string name = "txtSelectLanguage" text=""/>
+
+	<!-- Help -->
+	<string name = "txtHelp1" text=""/>
+	<string name = "txtHelp2" text=""/>
+	<string name = "txtHelp3" text=""/>
+
+	<!-- COMMON -->
+	<string name = "txtYes" text=""/>
+	<string name = "txtNo" text=""/>
+	<string name = "txtOK" text=""/>
+	<string name = "txtWatchVideo" text=""/>
+</Resources>

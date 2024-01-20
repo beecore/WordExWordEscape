@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3381561dc1bb41459fb3c5e7bd87224, type: 3}
+  m_Name: Episode-1
+  m_EditorClassIdentifier: 
+  episodeNumber: 0
+  episodeName: 1
+  allLevels:
+  - levelNumber: 1
+    question: How Many Cat In Kitchen?
+    answer: Five
+    allPictures:
+    - {fileID: 21300000, guid: 1743287b4b440f243a410962ce748661, type: 3}
+  - levelNumber: 2
+    question: "C\xF3 bao nhieu diem kh\xE1c nhau?"
+    answer: Three
+    allPictures:
+    - {fileID: 21300000, guid: f7ece725400fc514aac307ca8707487f, type: 3}
