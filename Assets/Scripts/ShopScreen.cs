@@ -12,7 +12,7 @@ public class ShopScreen : MonoBehaviour
 	public static event Action<bool> OnShopScreenStatusChanged;
 	
 	[SerializeField] GameObject removeAdsContent;
-	[SerializeField] RectTransform mainRoot;
+	//[SerializeField] RectTransform mainRoot;
 
 
 	public void OnCloseButtonPressed() 
@@ -38,11 +38,11 @@ public class ShopScreen : MonoBehaviour
 	}
 
 	void SetShopPanel() {
-		if(removeAdsContent.activeSelf) {
-			mainRoot.sizeDelta = new Vector2(900,1375);
-		} else {
-			mainRoot.sizeDelta = new Vector2(900,1215);
-		}
+		//if(removeAdsContent.activeSelf) {
+		//	mainRoot.sizeDelta = new Vector2(900,1375);
+		//} else {
+		//	mainRoot.sizeDelta = new Vector2(900,1215);
+		//}
 	}
 
 	public void OnWatchVideoButtonPressed() {

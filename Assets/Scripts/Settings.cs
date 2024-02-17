@@ -13,7 +13,7 @@ public class Settings : MonoBehaviour {
 
 	[SerializeField] UnityEngine.UI.Text txtAppVersion;
 
-	string privacyPolicyURL = "";	
+	string privacyPolicyURL = "https://powegamestudio.blogspot.com/2022/03/privacy-policy-this-privacy-policy.html";	
 	string supportURL = "";
 
 	void Start() {

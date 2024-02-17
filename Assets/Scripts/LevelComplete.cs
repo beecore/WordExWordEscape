@@ -13,28 +13,30 @@ public class LevelComplete : MonoBehaviour {
 	[SerializeField] GameObject levelcompleteContent;
 	[SerializeField] AnswerPanel answerPanel;
 
-	[SerializeField] UnityEngine.UI.Image imgProgressCircle;
-	[SerializeField] UnityEngine.UI.Text txtLevelProgress;
+	//[SerializeField] UnityEngine.UI.Image imgProgressCircle;
+	//[SerializeField] UnityEngine.UI.Text txtLevelProgress;
 
 	void Start() {
-		float fillAmount = 0.05F * (UIController.Instance.currentLevel - 2);
-		imgProgressCircle.fillAmount = fillAmount;
+		//float fillAmount = 0.05F * (UIController.Instance.currentLevel - 2);
+		//imgProgressCircle.fillAmount = fillAmount;
 	}
 
 	void OnEnable() {
+        Debug.Log("OnEnable");
 	 	Invoke("LevelCompleteAnimation",0.1F);
 	}
 
 	void OnDisable() {
-		imgProgressCircle.enabled = false;
-		txtLevelProgress.enabled = false;
+		//imgProgressCircle.enabled = false;
+		//txtLevelProgress.enabled = false;
 		BGMusic.Instance.ResumeBgMusic();
 	}
 
 	// Shows the level complete animation.
 	void LevelCompleteAnimation() 
 	{
-		BGMusic.Instance.PauseBgMusic();
+        Debug.Log("OnEnable "+ (UIController.Instance.typeGame));
+        BGMusic.Instance.PauseBgMusic();
 		header.GetComponent<Animator>().SetTrigger("Enter");
         if (UIController.Instance.typeGame == 0)
         {
@@ -53,45 +55,46 @@ public class LevelComplete : MonoBehaviour {
 		levelcompleteContent.SetActive(true);
 		AudioController.Instance.PlayLevelCompleteSound();
 
-		Invoke("ShowLevelProgressAnimation",0.7F);
+		//Invoke("ShowLevelProgressAnimation",0.7F);
 		Invoke("AddCoinReward",1F);
 	}
 
-	void ShowLevelProgressAnimation() {
-		StartCoroutine(AnimateProgressCircle());
-	}
+	//void ShowLevelProgressAnimation() {
+	//	StartCoroutine(AnimateProgressCircle());
+	//}
 
-	IEnumerator AnimateProgressCircle() {
-		int lastCompletedLevel = UIController.Instance.currentLevel - 1;
-		if(lastCompletedLevel == 0 ) {
-			lastCompletedLevel = UIController.Instance.levelsPerEpisode;
-		} else if(lastCompletedLevel == 1) {
-			imgProgressCircle.fillAmount = 0;
-		}
+	//IEnumerator AnimateProgressCircle() {
+	//	int lastCompletedLevel = UIController.Instance.currentLevel - 1;
+	//	if(lastCompletedLevel == 0 ) {
+	//		lastCompletedLevel = UIController.Instance.levelsPerEpisode;
+	//	} else if(lastCompletedLevel == 1) {
+	//		//imgProgressCircle.fillAmount = 0;
+	//	}
 
-		imgProgressCircle.enabled = true;
-		txtLevelProgress.text = (lastCompletedLevel * 5).ToString() + "%";
-		txtLevelProgress.enabled = true;
+	//	//imgProgressCircle.enabled = true;
+	//	//txtLevelProgress.text = (lastCompletedLevel * 5).ToString() + "%";
+	//	//txtLevelProgress.enabled = true;
 
-		float fillAmount = 0.05F * lastCompletedLevel;
+	//	float fillAmount = 0.05F * lastCompletedLevel;
 
-		while(imgProgressCircle.fillAmount < fillAmount) {
-			imgProgressCircle.fillAmount = imgProgressCircle.fillAmount + 0.003F;
-			yield return new WaitForFixedUpdate();
-		}
-	}
+	//	//while(imgProgressCircle.fillAmount < fillAmount) {
+	//	//	imgProgressCircle.fillAmount = imgProgressCircle.fillAmount + 0.003F;
+	//	//	yield return new WaitForFixedUpdate();
+	//	//}
+	//}
 
 	// Loads the next level on pressing next button of level complete screen.
 	public void OnContinueButtonPressed() {
 		if(InputManager.Instance.canInput()) {
 			answerPanel.Clear();
+            Debug.Log("game " + UIController.Instance.typeGame);
             if (UIController.Instance.typeGame == 0)
             {
                 UIController.Instance.gameScreen.GetComponent<GamePlay>().LoadLevel();
             }
             else if (UIController.Instance.typeGame == 1)
             {
-                Debug.Log("game " + UIController.Instance.questionScreen);
+              
               UIController.Instance.questionScreen.GetComponent<QuestionGamePlay>().LoadLevel();
             }
             

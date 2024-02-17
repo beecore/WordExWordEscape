@@ -34,7 +34,7 @@ public class LevelQuestionReader : MonoBehaviour
         {
 
             puzzleGrid.PrepareQUestionGrid(thisLevel.allPictures);
-            QuestionGamePlay.Instance.inputPanel.PrepareInputPanel(thisLevel.answer.ToUpper());
+            QuestionGamePlay.Instance.inputPanel.PrepareInputPanel(thisLevel.answer.Trim().ToUpper());
             if (!QuestionGamePlay.Instance.answerPanel.gameObject.activeSelf)
             {
                 QuestionGamePlay.Instance.answerPanel.gameObject.SetActive(true);

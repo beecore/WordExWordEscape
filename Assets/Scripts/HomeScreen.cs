@@ -12,9 +12,19 @@ public class HomeScreen : MonoBehaviour
     [SerializeField] GameObject btnPlay;
     [SerializeField] GameObject header;
     [SerializeField] TextMeshProUGUI txtLevel;
-
-	public void OnPlayButtonPressed() {
+    [SerializeField]
+    AnswerPanel answerPanel;
+    public void OnPlayButtonPressed() {
         if(InputManager.Instance.canInput()) {
+            if (UIController.Instance.answerPanel != null)
+            {
+                if (UIController.Instance.answerPanel.transform.childCount > 0)
+                {
+                    UIController.Instance.answerPanel.Clear();
+                }
+              
+            }
+            
             DisableHomeScreen();
         }
     }
@@ -31,12 +41,13 @@ public class HomeScreen : MonoBehaviour
     void ActivateGamePlay()
     {
         gameObject.Deactivate();
+        UIController.Instance.typeGame = 1;
         UIController.Instance.questionScreen.Activate();
     }
 
     void OnEnable() {
         Invoke("SetCurrentLevelUIOnHomeScreen",0.5F);
-
+        AdManager.Instance.HideBanner();
         LocalizationManager.OnLanguageChangedEvent += OnLanguageChanged;
     }
 
@@ -46,7 +57,7 @@ public class HomeScreen : MonoBehaviour
 
     // Sets the UI of home screen on activing home screen.
     void SetCurrentLevelUIOnHomeScreen() 
-    {        
+    {
         int totalPlayedLevel = ((UIController.Instance.currentProgressQuestionEpisode - 1) * UIController.Instance.levelsPerQuestionEpisode) + UIController.Instance.currentProgressQuestionLevel;
         txtLevel.text = totalPlayedLevel.ToString();
 

@@ -32,7 +32,15 @@ public class RemoveLetters : MonoBehaviour
 		{
 			if(CurrencyManager.Instance.GetCoinBalance() >= CurrencyManager.Instance.removeExtraLetterCoinPrice) {
 				CurrencyManager.Instance.deductBalance(CurrencyManager.Instance.removeExtraLetterCoinPrice);
-				GamePlay.Instance.inputPanel.RemoveExtraLettersAfterDelay();
+                if (UIController.Instance.typeGame == 0)
+                {
+                    GamePlay.Instance.inputPanel.RemoveExtraLettersAfterDelay();
+                }
+                else if (UIController.Instance.typeGame == 1)
+                {
+                    QuestionGamePlay.Instance.inputPanel.RemoveExtraLettersAfterDelay();
+                }
+                
 			} else {
 				UIController.Instance.getMoreCoinsPopup.Activate();
 				UIController.Instance.getMoreCoinsPopup.GetComponent<GetMoreCoins>().SetCoinUsePurpose(CoinUsePurpose.REMOVE_LETTERS);

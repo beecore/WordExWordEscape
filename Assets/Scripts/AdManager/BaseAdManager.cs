@@ -40,17 +40,18 @@ public class BaseAdManager : Singleton<BaseAdManager>
     }
 
     #region hienthi
-    //Show banner ads. Not supported in this version.
+    //Show banner ads. Not supported in this version.s
     public void InitBanner()
     {
         if (AdManager.Instance.isAdsAllowed())
         {
-            bannerView = new BannerView(bannerAdUnitId_google, AdSize.SmartBanner, AdPosition.Bottom);
+            
+            bannerView = new BannerView(bannerAdUnitId_google, AdSize.Banner, AdPosition.Bottom);
             AdRequest request = new AdRequest.Builder().Build();
             bannerView.LoadAd(request);
             bannerView.Hide();
 
-            ShowBanner();
+            //ShowBanner();
         }
     }
 
@@ -254,7 +255,9 @@ public class BaseAdManager : Singleton<BaseAdManager>
         {
             rewardBasedVideo.Show((Reward reward) =>
             {
-              
+                CurrencyManager.Instance.AddCoinBalance(50);
+                this.RequestRewardBasedVideo();
+
             });
         }
            

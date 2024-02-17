@@ -10,6 +10,14 @@ public class QuestionButton : MonoBehaviour
         {
            
             UIController.Instance.typeGame = 0;
+            if (UIController.Instance.answerPanel != null)
+            {
+                if (UIController.Instance.answerPanel.transform.childCount > 0)
+                {
+                    UIController.Instance.answerPanel.Clear();
+                }
+
+            }
             UIController.Instance.gameScreen.Activate();
             UIController.Instance.homeScreen.Deactivate();
 

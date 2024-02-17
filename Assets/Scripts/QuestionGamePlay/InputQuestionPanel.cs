@@ -34,7 +34,7 @@ public class InputQuestionPanel : MonoBehaviour
             puzzleSet.Add(characterSet[index]);
         }
 
-        if (PlayerPrefs.HasKey("HelpShown"))
+        if (PlayerPrefs.HasKey("HelpShownQuestion"))
         {
             puzzleSet.Shuffle();
         }
@@ -89,12 +89,20 @@ public class InputQuestionPanel : MonoBehaviour
     // This is power button. This reveal one random character in answer panel using coin.
     public void OnRevealLetterButtonPressed()
     {
+        Debug.Log("OnRevealLetterButtonPressed");
         if (InputManager.Instance.canInput())
         {
             UIController.Instance.revealLetterPopup.Activate();
         }
     }
+    public void NextLevelButtonPressed()
+    {
+        if (InputManager.Instance.canInput())
+        {
+            UIController.Instance.nextLevelPopup.Activate();
 
+        }
+    }
     public void RemoveExtraLettersAfterDelay(float delay = 0.5F)
     {
         Invoke("RemoveExtraLetters", delay);

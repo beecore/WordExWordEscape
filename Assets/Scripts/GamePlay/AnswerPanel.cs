@@ -26,14 +26,15 @@ public class AnswerPanel : MonoBehaviour
 		answerChars = new List<AnswerChar>();
 		answerPanel.ClearAllChild();
 		
-		int answerButtonSize = 110;
-		int maxFittingChar = 8;
+		int answerButtonWSize = 120;
+        int answerButtonHSize = 130;
+        int maxFittingChar = 8;
 
 		if(answerCharacters > 8) {
-			answerButtonSize = ((answerButtonSize * maxFittingChar) / answerCharacters);
+            answerButtonWSize = ((answerButtonWSize * maxFittingChar) / answerCharacters);
 		}
 
-		answerButtonTemplate.GetComponent<RectTransform>().sizeDelta = new Vector2(answerButtonSize,answerButtonSize);
+		answerButtonTemplate.GetComponent<RectTransform>().sizeDelta = new Vector2(answerButtonWSize, answerButtonHSize);
 
 		for(int index = 0; index < answerCharacters; index ++) 
 		{
@@ -52,14 +53,15 @@ public class AnswerPanel : MonoBehaviour
 		answerPanel.ClearAllChild();
 		int index = 0;
 
-		int answerButtonSize = 110;
-		int maxFittingChar = 8;
+        int answerButtonWSize = 120;
+        int answerButtonHSize = 130;
+        int maxFittingChar = 8;
 
 		if(answer.Length > 8) {
-			answerButtonSize = ((answerButtonSize * maxFittingChar) / answer.Length);
+            answerButtonWSize = ((answerButtonWSize * maxFittingChar) / answer.Length);
 		}
 
-		answerButtonTemplate.GetComponent<RectTransform>().sizeDelta = new Vector2(answerButtonSize,answerButtonSize);
+		answerButtonTemplate.GetComponent<RectTransform>().sizeDelta = new Vector2(answerButtonWSize, answerButtonHSize);
 		
 		foreach (char c in answer) {
 			GameObject answerButton = (GameObject) Instantiate(answerButtonTemplate,Vector3.zero,Quaternion.identity,answerPanel.transform) as GameObject;

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Policty.unity
+    guid: 043524aa92a6b394f9168b8489358c77
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 4c21dd19b261c11469499c03446192e7
   m_configObjects: {}

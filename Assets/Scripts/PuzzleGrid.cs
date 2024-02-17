@@ -14,15 +14,16 @@ public class PuzzleGrid : MonoBehaviour {
 	
 	public void PreparePuzzleGrid(List<Sprite> allPictures) {
 		pictureFrames[0].sprite= allPictures[0];
-		pictureFrames[1].sprite= allPictures[1];
-		pictureFrames[2].sprite= allPictures[2];
-		pictureFrames[3].sprite= allPictures[3];
+		//pictureFrames[1].sprite= allPictures[1];
+		//pictureFrames[2].sprite= allPictures[2];
+		//pictureFrames[3].sprite= allPictures[3];
 
 		transform.localScale = Vector3.one;
 	}
     public void PrepareQUestionGrid(List<Sprite> allPictures)
     {
         pictureFrames[0].sprite = allPictures[0];
+        pictureFrames[1].sprite = allPictures[1];
         transform.localScale = Vector3.one;
     }
 }
