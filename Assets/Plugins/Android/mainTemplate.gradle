@@ -12,11 +12,9 @@
         mavenCentral()
     }
 }
-
 gradle.projectsEvaluated {
     apply from: 'GoogleMobileAdsPlugin.androidlib/validate_dependencies.gradle'
 }
-
 // Android Resolver Repos End
 apply plugin: 'com.android.library'
 **APPLY_PLUGINS**

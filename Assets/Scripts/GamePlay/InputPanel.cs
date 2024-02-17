@@ -75,11 +75,20 @@ public class InputPanel : MonoBehaviour {
 	public void OnRemoveExtraLetterButtonPressed() {
 		if(InputManager.Instance.canInput()) {
 			UIController.Instance.removeLettersPopup.Activate();
+
 		}
 	}
+    public void NextLevelButtonPressed()
+    {
+        if (InputManager.Instance.canInput())
+        {
+            UIController.Instance.nextLevelPopup.Activate();
 
-	// This is power button. This reveal one random character in answer panel using coin.
-	public void OnRevealLetterButtonPressed() {
+        }
+    }
+
+    // This is power button. This reveal one random character in answer panel using coin.
+    public void OnRevealLetterButtonPressed() {
 		if(InputManager.Instance.canInput()) {
 			UIController.Instance.revealLetterPopup.Activate();
 		}

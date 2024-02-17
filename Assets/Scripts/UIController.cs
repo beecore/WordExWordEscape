@@ -3,86 +3,106 @@
  * ANY UI SCREEN/POPUP CAN BE ACTIVATED AND DEACTIVATED USING THIS CONTROLLER.
  ***************************************************************************************/
 
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using System;
 
 public class UIController : Singleton<UIController>
 {
-	List<string> screenStack = new List<string>();
+    private List<string> screenStack = new List<string>();
 
-	[SerializeField] Canvas UICanvas;
-	public GameObject homeScreen;
-	public GameObject episodeScreen;
-	public GameObject levelScreen;
-	public GameObject gameScreen;
-	public GameObject shopScreen;
-	public GameObject settingScreen;
-	public GameObject levelCompleteScreen;
-	public GameObject quitGameScreen;
-	public GameObject selectLanguageScreen;
-	public GameObject commonPopup;
-	public GameObject purchaseSuccessPopup;
-	public GameObject purchaseFailurePopup;
-	public GameObject revealLetterPopup;
-	public GameObject removeLettersPopup;
-	public GameObject getMoreCoinsPopup;
+    [SerializeField]
+    private Canvas UICanvas;
+
+    public GameObject homeScreen;
+    public GameObject episodeScreen;
+    public GameObject levelScreen;
+    public GameObject gameScreen;
+    public GameObject shopScreen;
+    public GameObject settingScreen;
+    public GameObject levelCompleteScreen;
+    public GameObject quitGameScreen;
+    public GameObject selectLanguageScreen;
+    public GameObject commonPopup;
+    public GameObject purchaseSuccessPopup;
+    public GameObject purchaseFailurePopup;
+    public GameObject revealLetterPopup;
+    public GameObject removeLettersPopup;
+    public GameObject getMoreCoinsPopup;
     public GameObject questionScreen;
-    public float screenAspect = 1.775F;
-	public static event Action<float> OnScreenAsectDetected;
-	
-	[System.NonSerialized] public int currentProgressLevel = 0;
-	[System.NonSerialized] public int currentProgressEpisode = 0;
-	
-	[System.NonSerialized] public int currentEpisode = 1;
-	[System.NonSerialized] public int currentLevel = 1;
+    public GameObject nextLevelPopup;
+    public AnswerPanel answerPanel;
 
-	public int levelsPerEpisode = 20;
-	public int totalEpisodes = 12;
+    public float screenAspect = 1.775F;
+
+    public static event Action<float> OnScreenAsectDetected;
+
+    [System.NonSerialized]
+    public int currentProgressLevel = 0;
+
+    [System.NonSerialized]
+    public int currentProgressEpisode = 0;
+
+    [System.NonSerialized]
+    public int currentEpisode = 1;
+
+    [System.NonSerialized]
+    public int currentLevel = 1;
+
+    public int levelsPerEpisode = 20;
+    public int totalEpisodes = 12;
+
     [System.NonSerialized]
     public int currentPlayingLevel = 1;
+
     [System.NonSerialized]
     public int totalPlayedLevel = 1;
 
+    [System.NonSerialized]
+    public int currentProgressQuestionLevel = 0;
 
+    [System.NonSerialized]
+    public int currentProgressQuestionEpisode = 0;
 
-    [System.NonSerialized] public int currentProgressQuestionLevel = 0;
-    [System.NonSerialized] public int currentProgressQuestionEpisode = 0;
+    [System.NonSerialized]
+    public int currentQuestionEpisode = 1;
 
-    [System.NonSerialized] public int currentQuestionEpisode = 1;
-    [System.NonSerialized] public int currentQuestionLevel = 1;
+    [System.NonSerialized]
+    public int currentQuestionLevel = 1;
 
-    public int levelsPerQuestionEpisode = 20;
-    public int totalQuestionEpisodes = 12;
-    [System.NonSerialized] public int currentPlayingQuestionLevel = 1;
-	[System.NonSerialized] public int totalPlayedQuestionLevel = 1;
+    public int levelsPerQuestionEpisode = 35;
+    public int totalQuestionEpisodes = 1;
 
+    [System.NonSerialized]
+    public int currentPlayingQuestionLevel = 1;
 
-    enum TYPEGAME
+    [System.NonSerialized]
+    public int totalPlayedQuestionLevel = 1;
+
+    private enum TYPEGAME
     {
         FOURIMAGE,
         QUESTION
     }
+
     [System.NonSerialized]
-    public int typeGame= (int)TYPEGAME.QUESTION;
-	void Start() 
-	{
-        Debug.Log("typeGame " + typeGame);
+    public int typeGame = (int)TYPEGAME.QUESTION;
 
+    private void Start()
+    {
         LoadLevel(typeGame);
-
         Application.targetFrameRate = 60;
-		homeScreen.Activate();
-	}
+        homeScreen.Activate();
+    }
+
     public void LoadLevel(int typeGame)
     {
+        Debug.Log("load level");
         switch (typeGame)
         {
             case (int)TYPEGAME.FOURIMAGE:
-                currentProgressEpisode = PlayerPrefs.GetInt("currentEpisode_" + LocalizationManager.Instance.getCurrentLanguageCode(), 1);
-                currentProgressLevel = PlayerPrefs.GetInt("currentLevel_" + LocalizationManager.Instance.getCurrentLanguageCode(), 1);
+                currentProgressEpisode = PlayerPrefs.GetInt("currentEpisode", 1);
+                currentProgressLevel = PlayerPrefs.GetInt("currentLevel", 1);
 
                 currentEpisode = currentProgressEpisode;
                 currentLevel = currentProgressLevel;
@@ -93,8 +113,8 @@ public class UIController : Singleton<UIController>
                 break;
 
             case (int)TYPEGAME.QUESTION:
-                currentProgressQuestionEpisode = PlayerPrefs.GetInt("currentQuestionEpisode_" + LocalizationManager.Instance.getCurrentLanguageCode(), 1);
-                currentProgressQuestionLevel = PlayerPrefs.GetInt("currentQuestionLevel_" + LocalizationManager.Instance.getCurrentLanguageCode(), 1);
+                currentProgressQuestionEpisode = PlayerPrefs.GetInt("currentQuestionEpisode", 1);
+                currentProgressQuestionLevel = PlayerPrefs.GetInt("currentQuestionLevel", 1);
 
                 currentQuestionEpisode = currentProgressQuestionEpisode;
                 currentQuestionLevel = currentProgressQuestionLevel;
@@ -102,168 +122,187 @@ public class UIController : Singleton<UIController>
                 totalPlayedQuestionLevel = ((currentProgressQuestionEpisode - 1) * levelsPerQuestionEpisode) + currentProgressQuestionLevel;
                 currentPlayingQuestionLevel = totalPlayedQuestionLevel;
                 break;
-
         }
     }
 
-	void OnEnable() {
-		screenAspect = (((float) Screen.height) / ((float) Screen.width));
+    private void OnEnable()
+    {
+        screenAspect = (((float)Screen.height) / ((float)Screen.width));
 
-		if(OnScreenAsectDetected != null) {
-			OnScreenAsectDetected.Invoke(screenAspect);
-		}
+        if (OnScreenAsectDetected != null)
+        {
+            OnScreenAsectDetected.Invoke(screenAspect);
+        }
 
-		LocalizationManager.OnLanguageChangedEvent += OnLanguageChanged;
-	}
-
-	void OnDisable() {
-		LocalizationManager.OnLanguageChangedEvent -= OnLanguageChanged;
-	}
-
-	void OnLanguageChanged(string languageCode) {
-        currentProgressEpisode = PlayerPrefs.GetInt("currentEpisode_"+languageCode,1);
-		currentProgressLevel = PlayerPrefs.GetInt("currentLevel_"+languageCode,1);
-
-		currentEpisode = currentProgressEpisode;
-		currentLevel = currentProgressLevel;
+        LocalizationManager.OnLanguageChangedEvent += OnLanguageChanged;
     }
 
-	// Handles the device back button, this will be used for android only.
-	void Update() {
-		if(Input.GetKeyDown(KeyCode.Escape))
-		{
-			if(InputManager.Instance.canInput())
-			{
-				if(screenStack.Count > 0) {
-					ProcessBackButton(Peek());
-				}
-			}
-		}
-	}
+    private void OnDisable()
+    {
+        LocalizationManager.OnLanguageChangedEvent -= OnLanguageChanged;
+    }
 
-	// Spawn and activate the given script name. this is not used in the game.
-	public GameObject SpawnUIScreen(string name) {
-		GameObject thisScreen = (GameObject)Instantiate (Resources.Load ("Prefabs/UIScreens/" + name));
-		thisScreen.name = name;
-		thisScreen.transform.SetParent (UICanvas.transform);
-		thisScreen.transform.localPosition = Vector3.zero;
-		thisScreen.transform.localScale = Vector3.one;
-		thisScreen.GetComponent<RectTransform> ().sizeDelta = Vector3.zero;
-		thisScreen.Activate();
-		return thisScreen;
-	}
+    private void OnLanguageChanged(string languageCode)
+    {
+        //      Debug.Log("OnLanguageChanged");
+        //      currentProgressEpisode = PlayerPrefs.GetInt("currentEpisode_"+languageCode,1);
+        //currentProgressLevel = PlayerPrefs.GetInt("currentLevel_"+languageCode,1);
 
-	// Adds the latest activated gameobject to stack.
-	public void Push(string screenName) {
-		if(!screenStack.Contains(screenName))
-		{
-			screenStack.Add(screenName);
-		}
-	}
+        //currentEpisode = currentProgressEpisode;
+        //currentLevel = currentProgressLevel;
 
-	// Returns the name of last activated gameobject from the stack.
-	public string Peek() {
-		if(screenStack.Count > 0)
-		{
-			return screenStack[screenStack.Count-1];
-		}
-		return "";
-	}
+        //      currentProgressQuestionEpisode = PlayerPrefs.GetInt("currentQuestionEpisode_" + languageCode, 1);
+        //      currentProgressQuestionLevel = PlayerPrefs.GetInt("currentQuestionLevel_" + languageCode, 1);
 
-	// Removes the last gameobject name from the stack.
-	public void Pop(string screenName) {
-		if(screenStack.Contains(screenName))
-		{
-			screenStack.Remove(screenName);
-		}
-	}
+        //      currentQuestionEpisode = currentProgressQuestionEpisode;
+        //      currentQuestionLevel = currentProgressQuestionLevel;
+    }
 
-	// On pressing back button of device, the last added popup/screen will get deactivated based on state of the game.
-	void ProcessBackButton(string currentScreen) {
-		switch(currentScreen)
-		{
-			case "HomeScreen":
-			quitGameScreen.Activate();
-			break;
+    // Handles the device back button, this will be used for android only.
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (InputManager.Instance.canInput())
+            {
+                if (screenStack.Count > 0)
+                {
+                    ProcessBackButton(Peek());
+                }
+            }
+        }
+    }
 
-			case "GameScreen":
-			gameScreen.GetComponent<GamePlay>().OnBackButtonPressed();
-			break;
+    // Spawn and activate the given script name. this is not used in the game.
+    public GameObject SpawnUIScreen(string name)
+    {
+        GameObject thisScreen = (GameObject)Instantiate(Resources.Load("Prefabs/UIScreens/" + name));
+        thisScreen.name = name;
+        thisScreen.transform.SetParent(UICanvas.transform);
+        thisScreen.transform.localPosition = Vector3.zero;
+        thisScreen.transform.localScale = Vector3.one;
+        thisScreen.GetComponent<RectTransform>().sizeDelta = Vector3.zero;
+        thisScreen.Activate();
+        return thisScreen;
+    }
 
-			case "Shop":
-			shopScreen.Deactivate();
-			break;
+    // Adds the latest activated gameobject to stack.
+    public void Push(string screenName)
+    {
+        if (!screenStack.Contains(screenName))
+        {
+            screenStack.Add(screenName);
+        }
+    }
 
-			case "Settings":
-			settingScreen.Deactivate();
-			break;
+    // Returns the name of last activated gameobject from the stack.
+    public string Peek()
+    {
+        if (screenStack.Count > 0)
+        {
+            return screenStack[screenStack.Count - 1];
+        }
+        return "";
+    }
 
-			case "QuitGame":
-			quitGameScreen.Deactivate();
-			break;
+    // Removes the last gameobject name from the stack.
+    public void Pop(string screenName)
+    {
+        if (screenStack.Contains(screenName))
+        {
+            screenStack.Remove(screenName);
+        }
+    }
 
-			case "SelectLanguage":
-			selectLanguageScreen.Deactivate();
-			break;
+    // On pressing back button of device, the last added popup/screen will get deactivated based on state of the game.
+    private void ProcessBackButton(string currentScreen)
+    {
+        switch (currentScreen)
+        {
+            case "HomeScreen":
+                quitGameScreen.Activate();
+                break;
 
-			case "CommonPopup":
-			commonPopup.Deactivate();
-			break;
+            case "GameScreen":
+                gameScreen.GetComponent<GamePlay>().OnBackButtonPressed();
+                break;
 
-			case "PurchaseSuccess":
-			purchaseSuccessPopup.Deactivate();
-			break;
+            case "Shop":
+                shopScreen.Deactivate();
+                break;
 
-			case "PurchaseFailure":
-			purchaseFailurePopup.Deactivate();
-			break;
+            case "Settings":
+                settingScreen.Deactivate();
+                break;
 
-			case "RevealCharacterPopup":
-			revealLetterPopup.Deactivate();
-			break;
+            case "QuitGame":
+                quitGameScreen.Deactivate();
+                break;
 
-			case "RemoveLettersPopup":
-			removeLettersPopup.Deactivate();
-			break;
+            case "SelectLanguage":
+                selectLanguageScreen.Deactivate();
+                break;
 
-			case "GetMoreCoins":
-			getMoreCoinsPopup.Deactivate();
-			break;
+            case "CommonPopup":
+                commonPopup.Deactivate();
+                break;
 
-			case "EpisodeScreen":
-			episodeScreen.Deactivate();
-			break;
+            case "PurchaseSuccess":
+                purchaseSuccessPopup.Deactivate();
+                break;
 
-			case "LevelScreen":
-			levelScreen.Deactivate();
-			break;
+            case "PurchaseFailure":
+                purchaseFailurePopup.Deactivate();
+                break;
+
+            case "RevealCharacterPopup":
+                revealLetterPopup.Deactivate();
+                break;
+
+            case "RemoveLettersPopup":
+                removeLettersPopup.Deactivate();
+                break;
+
+            case "GetMoreCoins":
+                getMoreCoinsPopup.Deactivate();
+                break;
+
+            case "EpisodeScreen":
+                episodeScreen.Deactivate();
+                break;
+
+            case "LevelScreen":
+                levelScreen.Deactivate();
+                break;
+
             case "QuestionScreen":
                 questionScreen.Deactivate();
                 break;
-
-                
-
         }
-	}
+    }
 
-	// Quits the game.
-	public void QuitGame() {
-		Invoke("QuitGameAfterDelay",0.5F);
-	}
+    // Quits the game.
+    public void QuitGame()
+    {
+        Invoke("QuitGameAfterDelay", 0.5F);
+    }
 
-	void QuitGameAfterDelay() {
-		#if UNITY_EDITOR
-			UnityEditor.EditorApplication.isPlaying = false;
-		#elif UNITY_ANDROID
+    private void QuitGameAfterDelay()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_ANDROID
 			AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
-			activity.Call<bool>("moveTaskToBack" , true); 
-		#elif UNITY_IOS
+			activity.Call<bool>("moveTaskToBack" , true);
+#elif UNITY_IOS
 			Application.Quit();
-		#endif
-	}
+#endif
+    }
 
-	// Handles the level progress and completion state.
-	public void OnLevelCompleted() {
+    // Handles the level progress and completion state.
+    public void OnLevelCompleted()
+    {
+        Debug.Log("OnLevelCompleted");
         switch (typeGame)
         {
             case 0:
@@ -278,6 +317,11 @@ public class UIController : Singleton<UIController>
                         currentLevel = 1;
                         currentEpisode++;
                     }
+                    else
+                    {
+                        currentLevel = 1;
+                        currentEpisode = 1;
+                    }
                 }
                 totalPlayedLevel = ((currentProgressEpisode - 1) * levelsPerEpisode) + currentProgressLevel;
                 currentPlayingLevel = ((currentEpisode - 1) * levelsPerEpisode) + currentLevel;
@@ -288,23 +332,29 @@ public class UIController : Singleton<UIController>
                     currentProgressLevel = currentLevel;
                 }
 
-                PlayerPrefs.SetInt("currentEpisode_" + LocalizationManager.Instance.getCurrentLanguageCode(), currentProgressEpisode);
-                PlayerPrefs.SetInt("currentLevel_" + LocalizationManager.Instance.getCurrentLanguageCode(), currentProgressLevel);
+                PlayerPrefs.SetInt("currentEpisode", currentProgressEpisode);
+                PlayerPrefs.SetInt("currentLevel", currentProgressLevel);
 
                 levelCompleteScreen.Activate();
                 AudioController.Instance.PlayLevelUpSound();
                 break;
+
             case 1:
-                if (currentQuestionLevel < levelsPerEpisode)
+                if (currentQuestionLevel < levelsPerQuestionEpisode)
                 {
                     currentQuestionLevel++;
                 }
                 else
                 {
-                    if (currentQuestionEpisode < totalEpisodes)
+                    if (currentQuestionEpisode < totalQuestionEpisodes)
                     {
                         currentQuestionLevel = 1;
                         currentQuestionEpisode++;
+                    }
+                    else
+                    {
+                        currentQuestionLevel = 1;
+                        currentQuestionEpisode = 1;
                     }
                 }
                 totalPlayedQuestionLevel = ((currentProgressQuestionEpisode - 1) * levelsPerQuestionEpisode) + currentProgressQuestionLevel;
@@ -316,35 +366,36 @@ public class UIController : Singleton<UIController>
                     currentProgressQuestionLevel = currentQuestionLevel;
                 }
 
-                PlayerPrefs.SetInt("currentQuestionEpisode_" + LocalizationManager.Instance.getCurrentLanguageCode(), currentProgressQuestionEpisode);
-                PlayerPrefs.SetInt("currentQuestionLevel_" + LocalizationManager.Instance.getCurrentLanguageCode(), currentProgressQuestionLevel);
+                PlayerPrefs.SetInt("currentQuestionEpisode", currentProgressQuestionEpisode);
+                PlayerPrefs.SetInt("currentQuestionLevel", currentProgressQuestionLevel);
 
                 levelCompleteScreen.Activate();
                 AudioController.Instance.PlayLevelUpSound();
                 break;
-            
         }
-		
-	}
+    }
 
-	// Show common pop-up.
-	public void ShowMessage(string title, string message) {
-		commonPopup.Activate();
-		commonPopup.GetComponent<CommonPopup>().SetText(title, message);
-	}
+    // Show common pop-up.
+    public void ShowMessage(string title, string message)
+    {
+        commonPopup.Activate();
+        commonPopup.GetComponent<CommonPopup>().SetText(title, message);
+    }
 
-	// Load specific selected level.
-	public void LoadSelectedLevel(int episodeNumber, int levelNumber) {
-		currentEpisode = episodeNumber;
-		currentLevel = levelNumber;
-		currentPlayingLevel = ((currentEpisode - 1) * levelsPerEpisode) + currentLevel;
+    // Load specific selected level.
+    public void LoadSelectedLevel(int episodeNumber, int levelNumber)
+    {
+        currentEpisode = episodeNumber;
+        currentLevel = levelNumber;
+        currentPlayingLevel = ((currentEpisode - 1) * levelsPerEpisode) + currentLevel;
 
-		GamePlay.Instance.LoadLevel();
-	}
+        GamePlay.Instance.LoadLevel();
+    }
 
-	// Unload unused asset. please call this on safe place as it might give a slight lag.
-	public void ClearCache() {
-		Resources.UnloadUnusedAssets();
-		System.GC.Collect();
+    // Unload unused asset. please call this on safe place as it might give a slight lag.
+    public void ClearCache()
+    {
+        Resources.UnloadUnusedAssets();
+        System.GC.Collect();
     }
 }

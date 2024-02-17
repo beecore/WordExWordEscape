@@ -14,6 +14,7 @@ public class QuestionGamePlay : Singleton<QuestionGamePlay>
     public AnswerPanel answerPanel;
     public InputQuestionPanel inputPanel;
     public TMP_Text questionText;
+    public TMP_Text levelquestionText;
 
     public static LevelQuestion thisLevel = null;
 
@@ -32,7 +33,9 @@ public class QuestionGamePlay : Singleton<QuestionGamePlay>
         Debug.Log("question");
         thisLevel = levelReader.ReadLevel();
         questionText.text = thisLevel.question;
+        levelquestionText.SetText("LEVEL "+UIController.Instance.currentPlayingQuestionLevel);
         CheckForHelp();
+        AdManager.Instance.ShowBanner();
     }
 
     // If help not ever, then it will show help on loading a level.
@@ -70,6 +73,7 @@ public class QuestionGamePlay : Singleton<QuestionGamePlay>
     private void ActivateHomeScreen()
     {
         gameObject.Deactivate();
+        AdManager.Instance.HideBanner();
         UIController.Instance.homeScreen.Activate();
     }
 
@@ -82,7 +86,6 @@ public class QuestionGamePlay : Singleton<QuestionGamePlay>
     // Add Character to answer panel, will be called from input panel.
     public void AddCharacterToAnswer(InputChar inputChar)
     {
-        Debug.Log("Add level");
         if (inputChar != null && !inputChar.isEmpty())
         {
             AnswerChar emptyChar = answerPanel.GetEmptyChar();
@@ -138,7 +141,7 @@ public class QuestionGamePlay : Singleton<QuestionGamePlay>
         string userAnswer = answerPanel.GetAnswerString();
         if (userAnswer.ToUpper() == thisLevel.answer.ToUpper())
         {
-            if (UIController.Instance.currentLevel == 1 && isHelpLevel)
+            if (UIController.Instance.currentQuestionLevel == 1 && isHelpLevel)
             {
                 inputPanel.ResetHelp();
                 isHelpLevel = false;

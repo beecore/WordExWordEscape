@@ -6,7 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class GamePlay : Singleton<GamePlay> 
 {
 	[SerializeField] GameObject btnBack;
@@ -21,7 +21,7 @@ public class GamePlay : Singleton<GamePlay>
    bool isHelpActive = false;
    bool isHelpLevel = false;
    int currentHelpStep = 0;
-
+    public TMP_Text levelquestionText;
     void OnEnable() {
         Invoke("LoadLevel",0.1F);
     }
@@ -30,9 +30,10 @@ public class GamePlay : Singleton<GamePlay>
     public void LoadLevel() 
     {
         Debug.Log("load level");
-       // txtLevel.text = UIController.Instance.currentPlayingLevel.ToString();
+        levelquestionText.SetText("LEVEL " + UIController.Instance.currentPlayingLevel);
         thisLevel = levelReader.ReadLevel();
         CheckForHelp();
+        AdManager.Instance.ShowBanner();
     }
 
     // If help not ever, then it will show help on loading a level.
@@ -64,6 +65,7 @@ public class GamePlay : Singleton<GamePlay>
 
     // Delayed call to activate home screen.
     void ActivateHomeScreen() {
+        AdManager.Instance.HideBanner();
         gameObject.Deactivate();
         UIController.Instance.homeScreen.Activate();
     }
